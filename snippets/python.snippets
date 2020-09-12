@@ -460,3 +460,22 @@ snippet numeric "methods for emulating a numeric type" b
 	def __coerce__(self, other):
 		${25:pass}
 
+# My snippets
+
+snippet script_bare
+	import argparse
+
+	def ${0:function_name}():
+		TODO
+
+	my_parser = argparse.ArgumentParser(description='TODO description')
+
+	my_parser.add_argument(
+		'string1', metavar='TODO', type=str, help='TODO first argument'
+	)
+
+	args = my_parser.parse_args()
+
+	#args.string1
+
+	print($0(args.string1))
