@@ -1,5 +1,20 @@
 # Ledger <http://ledger-cli.org/>
+snippet b
+	Bank Account
+
+snippet c
+	Cash in Wallet
+
+snippet d
+	Dining
+
 snippet ent
-	`strftime("%Y/%m/%d")` ${1:transaction}
+	`strftime("%Y-%m-%d")` ! ${1:transaction}
 	    ${2:account}    ${3:value}
 	    ${0:account}
+
+snippet g
+	Groceries
+
+snippet s
+	Sainsbury's
